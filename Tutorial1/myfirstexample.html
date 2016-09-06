@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+   
+   <head>
+      <script src = "angular.min.js"></script>
+   </head>
+   
+   <body ng-app = "myapp">
+      
+      <div id="myview" ng-controller = "HelloController" >
+         <h2>Hello World! I'm learning {{ helloTo.title }}.</h2>
+      </div>
+      
+      <script>
+         angular.module("myapp", [])
+         .controller("HelloController", function($scope) {
+            $scope.helloTo = {};
+            $scope.helloTo.title = "AngularJS";
+         });
+      </script>
+      
+   </body>
+</html>
