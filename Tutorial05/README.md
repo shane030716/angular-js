@@ -4,7 +4,7 @@
 
 `{{ expression }}`. So the double braces are called **Expression**
 
-Expressions are used to **bind** application data to html. It behaves in the same way as `ng-bind` derective does. AngularJS application expressions are **pure javascript expressions** and output the data where they are used.
+Expressions are used to **bind** application data to html. It behaves in the same way as the `ng-bind` derective does. AngularJS application expressions are **pure javascript expressions** and output the data where they are used.
 
 * Numbers:
    `<p> Expense on books: ${{ cost * quantity }}</p>`
