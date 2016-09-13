@@ -34,6 +34,12 @@ Initialize an array of contries using JSON
 	...
 </div>
 ```
+Looks like you can use semicolon `;` to initialize more data
+```
+<div ng-app = "" ng-init = "countries = [{locale:'en-CA',name:'Canada'}]; someNumber = 12345">
+   ...
+</div>
+```
 
 #### `ng-model` directive
 
@@ -46,6 +52,8 @@ Defining a model named `"name"`.
    <p>Enter your Name: <input type = "text" ng-model = "name"></p>
 </div>
 ```
+
+Note that using `{{ name }}` or `<span ng-bind = "name"></span>` can both display `name` on value change.
 
 #### `ng-repeat` directive
 
