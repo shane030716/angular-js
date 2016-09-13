@@ -18,6 +18,8 @@ Expressions are used to **bind** application data to html. It behaves in the sam
 * Array:
    `<p> Marks: {{ marks[3] }} </p>`
 
+*(Remember you can use `;` to separate the object initializations in `ng-init`)*
+
 See [testAngularJS.html](testAngularJS.html)
 
 [List of Tutorials](https://github.com/shane030716/angular-js#list-of-tutorials)
