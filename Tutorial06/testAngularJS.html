@@ -1,0 +1,35 @@
+<html>
+   
+   <head>
+      <title>AngularJS Directives</title>
+   </head>
+   
+   <body>
+      <h1>AngularJS Sample Application</h1>
+      
+      <div ng-app = "mainApp" ng-controller = "studentController">
+         Enter first name: <input type="text" ng-model = "student.firstname" /><br />
+         Enter last name: <input type="text" ng-model = "student.lastname" /><br />
+         <br />
+         You full name is {{ student.fullname() }}.
+      </div>
+
+      <script src = "angular.min.js"></script>
+      <script>
+         var mainApp = angular.module("mainApp", []);
+
+         mainApp.controller("studentController", function($scope) {
+            $scope.student = {
+               firstname: "Justin",
+               lastname: "Trudeau",
+
+               fullname: function() {
+                  return $scope.student.firstname + " " + $scope.student.lastname;
+               }
+            };
+         });
+      </script>
+      
+     
+   </body>
+</html>
